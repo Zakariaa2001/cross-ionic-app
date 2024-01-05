@@ -1,20 +1,24 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-title>
-      Blank
+      Home
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-card>
+      <ion-card-header>
+        <ion-card-title>Card Title</ion-card-title>
+      </ion-card-header>
+      <ion-list>
+        <ion-item>Name: <strong>{{ contact.name }}</strong></ion-item>
+        <ion-item>Email: <strong>{{ contact.email }}</strong></ion-item>
+        <ion-item>Tel: <strong>{{ contact.tel }}</strong></ion-item>
+      </ion-list>
+      <ion-card-content>
+        <ion-img [src]="contact.logImg"></ion-img>
+        <ion-img [src]="contact.locationImg"></ion-img>
+      </ion-card-content> 
+  </ion-card>
 </ion-content>
