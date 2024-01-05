@@ -18,7 +18,7 @@ export class AppComponent {
   private login() {
     let authenticated = this.authenticationService.loadToken();
     if(authenticated) {
-      this.router.navigateByUrl('/menu');
+      this.router.navigateByUrl('/menu/home');
 
     }else {
       this.router.navigateByUrl('/login');

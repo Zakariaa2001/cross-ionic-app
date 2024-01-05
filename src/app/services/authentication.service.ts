@@ -35,4 +35,7 @@ export class AuthenticationService {
 
     return this.authentication;
   }
+  public logout(){
+    localStorage.removeItem('myToken');
+  }
 } 
